@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    /*background-color: black;*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: "Fira Code";
+    background-image: url(../images/prizebackground.jpg);
+    background-position:  center, center;
+    background-repeat: no-repeat, repeat;
+}
+
+.box {
+    padding: 20px;
+    /*border: 1px solid #ddd;*/
+}
+
+.console {
+    display: flex;
+    justify-content: space-between;
+    /*height: 50px;*/
+    margin-top: auto;
+    align-items: flex-end;
+    /*justify-content: center;*/
+}
+
+.console :not(:last-child) {
+    margin-right: 20px;
+}
+
+.console * {
+    height: 80px;
+    font-size: 46px;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 46px;
+    flex-direction: column;
+    margin: auto;
+    border: 1px dashed red;
+}
+
+.columns {
+    display: flex;
+
+    /* Offset the 10px worth of padding on each column. */
+    margin: -10px -10px 0 -10px;
+}
+
+.columns:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.columns.is-multiline {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.column.is-narrow {
+    flex: none;
+}
+
+/* Rinse and repeat for is-1 .. is-11 */
+.column.is-2 {
+    width: 16.66667%;
+    flex: none;
+}
+
+.column.is-4 {
+    width: 33.33333%;
+    flex: none;
+}
+
+.column.is-6 {
+    width: 50%;
+    flex: none;
+}
+
+.column.is-8 {
+    width: 66.66667%;
+    flex: none;
+}
+
+＃tip {
+    /*display: flex;*/
+}
+
+#tip {
+    padding: 0 60px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.profile {
+    display: flex;
+    font-size: 36px;
+    flex-direction: column;
+    /*text-align: center;*/
+    align-items: center;
+    margin-top: 110px;
+    /*justify-content: center;*/
+}
+
+.greeting {
+    margin-top: 110px;
+    text-align: left;
+}
+
+.username{
+    margin-top: 20px;
+}
+
+.show {
+    width: 930px;
+    margin: auto;
+    min-height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border-radius: 20px;*/
+    /*background-color: white;*/
+}
+
+.command {
+    list-style: none;
+    border-radius: 50px;
+    background-color: #eae5f8;
+    height: 90px;
+    width: 600px;
+    display: flex;
+    /*text-align: center;*/
+    align-items: center;
+}
+
+.command span {
+    margin: auto;
+}
+
+.command:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.commands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #957bdc;
+    margin-top: 66px;
+    margin-bottom: 110px;
+}
+
+.show > * {
+    display: none;
+}
+
+.show {
+    /*display: none;*/
+}
+
+#keyword {
+    opacity: 0.4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+

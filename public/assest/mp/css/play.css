@@ -1,0 +1,521 @@
+body {
+    background: #1e2126;
+    width: 375px;
+}
+
+#navbar {
+	width: 100%;
+	height: 50px;
+	background-color: #1e2126;
+}
+
+#navbar > #logo {
+    float: left;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+#navbar > #tip {
+    margin-top: 10px;
+    margin-left: 8px;
+    float: left;
+    line-height: 0;
+}
+
+#navbar > #tip > span:first-child {
+    width: 103px;
+	height: 16.5px;
+    font-family:PingFangSC-Regular;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: #ffffff;
+    position: absolute;
+    top: 20px;
+}
+
+#navbar > #tip > span:nth-of-type(2) {
+    width: 101px;
+    height: 14px;
+    font-family:PingFangSC-Regular;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #72737c;
+    position: absolute;
+    top: 36px;
+}
+
+#navbar > #download {
+    float: right;
+    width: 79.8px;
+    height: 29.8px;
+    border-radius: 53.2px;
+    background-color: #ed4956;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+#navbar > #download > img {
+    margin-left: 17px;
+    margin-top: 6px;
+}
+#navbar > #download > span {
+    width: 26px;
+    height: 16.5px;
+    font-family:PingFangSC-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 6px;
+    position: absolute;
+}
+
+#navbar > #download:hover {
+    opacity: 0.5;
+}
+
+#video {
+    position:absolute;
+    top:50px;
+    z-index:0;
+    width: 100%;
+}
+
+#user {
+    top: 62.5px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    z-index: auto;
+    position: absolute;
+}
+
+#praise {
+    top: 122.5px;
+    right: 8px;
+    opacity:0.14;
+    background:#222222;
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    z-index: auto;
+    position: absolute;
+}
+
+#praise-img {
+    top: 135.5px;
+    right: 20px;
+    position:absolute;
+    z-index: auto;
+    position: absolute;
+}
+
+#share {
+    top: 182.5px;
+    right: 8px;
+    opacity:0.14;
+    background:#222222;
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    position:absolute;
+    z-index: 1;
+}
+#share-img {
+    top: 196px;
+    right: 21px;
+    position:absolute;
+    z-index: 1;
+}
+
+#topic {
+    width: 100%;
+    background: rgba(30,32,38,0.85);
+    position: absolute;
+    padding-bottom: 20px;
+    bottom: 0px;
+    z-index: auto;
+    display: none;
+}
+
+#topic p {
+    font-family:PingFangSC-Regular;
+    width: 354px;
+    font-size: 17px;
+    color: #ffffff;
+    position: relative;
+    left: 12px;
+    top: 15.5px;
+}
+
+.answer {
+    position: relative;
+    top: 20.5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 14px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+    margin-bottom: 20px;
+}
+
+.answer span{
+    font-family:PingFangSC-Regular;
+    font-size:15px;
+    color:#ffffff;
+    letter-spacing:0;
+    text-align:center;
+    margin-left: 8px;
+    vertical-align:middle;
+}
+
+#join-user {
+    width: 100%;
+    background:#25272D;
+    padding-top: 25.5px;
+    top: 100%;
+    position: absolute;
+    z-index: auto;
+}
+
+#join-user .header div{
+	width: 5px;
+	height: 15px;
+	border-radius: 2.5px;
+	background-color: #ed4956;
+    margin-left: 12px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+#join-user .header span{
+	width: 150px;
+	height: 21px;
+    font-family: PingFangSC-Regular;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: #ffffff;
+    margin-left: 5px;
+    vertical-align:middle;
+}
+
+#join-user .users {
+    margin-top: 21.5px;
+    text-align: center;
+    margin-left: 12px;
+}
+
+#join-user .users .user {
+    float: left;
+    margin-right: 10.2px;
+    margin-bottom: 18px;
+    width: 50px;
+}
+
+#join-user .user .name {
+	height: 14px;
+    font-family: PingFangSC-Regular;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: #ffffff;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+#join-user .user .more {
+    width: 50px;
+    height: 50px;
+    background-color: #232529;
+    border-radius:100%;
+}
+
+#join-user .user .more img {
+    margin: 23px 17px;
+}
+
+#answer-tip {
+    display: none;
+    width: 255px;
+	height: 183px;
+	border-radius: 10px;
+	background-color: #222222;
+    z-index: 1041;
+    margin-top: 178px;
+    margin-left: 60px;
+    position: fixed;
+}
+
+#answer-tip span:first-child{
+    position: absolute;
+    margin-left: 232px;
+    margin-top: 5px;
+}
+
+#answer-tip span:nth-of-type(2){
+    position: absolute;
+    font-family: PingFangSC-Regular;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 44px;
+    margin-left: 51px;
+    height: 35px;
+}
+
+#answer-tip span:nth-of-type(2) span{
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+#answer-tip span:nth-of-type(3){
+    position: absolute;
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 115px;
+    margin-left: 32.5px;
+    width: 190px;
+    height: 39.5px;
+    border-radius: 50px;
+    background-color: #ed4956;
+    border: solid 1px #ed4956;
+    text-align: center;
+    padding-top: 7px;
+}
+
+#share-tip {
+    position: fixed;
+    width: 100%;
+	height: 100px;
+	background-color: #232529;
+    top: 0px;
+    z-index: 1042;
+    display: none;
+}
+
+#share-tip span{
+    position: absolute;
+    width: 267.5px;
+	height: 21px;
+    font-family: PingFangSC-Regular;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: #ffffff;
+    margin: 39.5px 63.5px 39.5px 44px;
+}
+
+#share-tip-point{
+    margin-top: 12.5px;
+    margin-left: 326px;
+}
+
+#share-component {
+    width: 100%;
+	height: 170px;
+	background-color: #232529;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    z-index: 1042;
+    display: none;
+}
+
+#share-component > div:first-child {
+    margin-left: 7px;
+}
+
+#share-component .component {
+    float: left;
+    margin-top: 25px;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+}
+
+#share-component .name {
+    width: 36px;
+    height: 16.5px;
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #ffffff;
+    position: relative;
+    top: 6px;
+    left: 0px;
+}
+
+#share-component .cancel {
+    margin-top: 110px;
+    margin-left: 22.5px;
+    width: 88%;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #30323a;
+    text-align: center;
+}
+
+
+#share-component .cancel a {
+    font-family: PingFangSC-Regular;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: #ffffff;
+    position: relative;
+    top: 10px;
+}
+
+#share-component .cancel a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+#play {
+    margin-top: 244px;
+    margin-left: 155px;
+}
+
+#play img {
+    position: relative;
+}
+
+@media screen and (min-width: 414px) {
+    body {
+        width: 414px;
+    }
+
+    #user {
+        top: 63.8px;
+        right: 8px;
+    }
+
+    #praise {
+        top: 130px;
+        right: 8px;
+    }
+
+    #praise-img {
+        top: 143px;
+        right: 20px;
+    }
+
+    #share {
+        top: 196px;
+        right: 8px;
+    }
+
+    #share-img {
+        top: 210px;
+        right: 22px;
+    }
+
+    #play {
+        margin-top: 271px;
+        margin-left: 175px;
+    }
+
+    #answer-tip {
+        margin-top: 196px;
+        margin-left: 80px;
+    }
+
+    #join-user .users .user {
+        margin-right: 16px;
+    }
+
+    #share-component .cancel p {
+        margin-left: 166px;
+    }
+
+    #share-component > div:first-child {
+        margin-left: 15px;
+    }
+
+    #share-component .component {
+        float: left;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    body {
+        width: 320px;
+    }
+
+    #user {
+        top: 63.8px;
+        left: 264.35px;
+    }
+
+    #praise {
+        top: 130px;
+        left: 264.35px;
+    }
+
+    #praise-img {
+        top: 143px;
+        left: 275px;
+    }
+
+    #share {
+        top: 196px;
+        left: 264.35px;
+    }
+
+    #share-img {
+        top: 210px;
+        left: 276px;
+    }
+
+    #play {
+        margin-top: 202px;
+        margin-left: 131px;
+    }
+
+    #answer-tip {
+        margin-top: 162px;
+        margin-left: 32px;
+    }
+
+    #join-user .users .user {
+        margin-right: 10px;
+    }
+
+    #topic p {
+        width: 300px;
+    }
+
+    #share-component .cancel p {
+        margin-left: 130px;
+    }
+
+    #share-component > div:first-child {
+        margin-left: 6px;
+    }
+
+    #share-component .component {
+        float: left;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
